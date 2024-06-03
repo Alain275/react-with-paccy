@@ -11,7 +11,13 @@ handleDelete=(movie)=>{
 }
 
 render(){
+  const {length:count}= this.state.movies;
+ 
+  if ( count===0)
+    return <p>there is no movies in the database</p>
   return(
+   <div>
+    <p>showing {count} movies in database</p>
     <table className="table">
         <thead>
         <tr>
@@ -34,6 +40,7 @@ render(){
             ))}  
         </tbody>
     </table>
+    </div>
   );  
 }}
 
