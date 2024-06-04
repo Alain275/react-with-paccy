@@ -5,7 +5,7 @@ class Counters extends Component {
   
 
   render() {
-    const {onReset,counters,onIncrement,onDelete}=this.props;
+    const {onReset,counters,onIncrement,onDelete,onDecrement}=this.props;
     return (
       <div>
         <button onClick={onReset} className="btn btn-primary m-2">Reset</button>
@@ -13,6 +13,7 @@ class Counters extends Component {
           <Counter
             key={counter.id}
             onIncrement={onIncrement}
+            onDecrement={onDecrement}
             onDelete={onDelete}
             counter={counter}
           />
