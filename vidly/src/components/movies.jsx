@@ -59,7 +59,7 @@ render(){
         </tbody>
     </table>
     <Pagination
-    itemsCount={count} 
+    itemCount={count} 
     pageSize={pageSize}
     currentPage={currentPage}
     onPageChange={this.handlePageChange}
