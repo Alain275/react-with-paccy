@@ -9,7 +9,7 @@ class  Moviestable extends Component {
     sortColumn.column = column;
     sortColumn.order = 'asc';
   }
-  this.props.onSort({sortColumn});
+  this.props.onSort(sortColumn);
   }
     
     
