@@ -1,4 +1,4 @@
-import { values } from "lodash";
+
 import React from "react";
 
 const ListGroup = props => {
@@ -8,7 +8,7 @@ const ListGroup = props => {
       onItemSelect,
       selectedItem}=props;
   return (
-    <ul className="list-group">
+    <ul className="list-group clickable" >
       {items.map(item => (
         <li 
         onClick={()=> onItemSelect(item)}
