@@ -11,6 +11,7 @@ const Navbar = () => {
     <NavLink  class="nav-item nav-link" to="movies">movies</NavLink>
       <NavLink  class="nav-item nav-link " to="customers">customers <span class="sr-only">(current)</span></NavLink>
       <NavLink  class="nav-item nav-link" to="rental">rentals</NavLink>
+      <NavLink  class="nav-item nav-link" to="login">login</NavLink>
       
       
     
